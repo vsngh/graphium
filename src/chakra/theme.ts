@@ -1,4 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
+import '@fontsource/raleway';
+import { Component } from 'react';
+
 const theme = extendTheme({
   colors: {
     brand: {
@@ -7,15 +10,21 @@ const theme = extendTheme({
     },
   },
   fonts: {
+    heading:'helvetica', 
     body: "Open Sans, sans-serif",
   },
   styles: {
     global:{
       body: {
-        bg: "gray.200",
+        bg: "#FFFFFF",
       },
     },
   },
+  Components:{
+    Button:{
+      bg:'#FFFFFFF'
+    }
+  }
 });
 
 export default theme;

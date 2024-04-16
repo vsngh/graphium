@@ -1,6 +1,9 @@
+import Middle from "@/components/Middle";
 
 export default function Home() {
   return (
-    <div>hello</div>
+    <>
+    <Middle/>
+    </>
   );
 }

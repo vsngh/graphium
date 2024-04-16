@@ -10,12 +10,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ChakraProvider theme={theme}>
-        <Layout>
-          <div>{children}</div>
-        </Layout>
-      </ChakraProvider>
-      <body>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <ChakraProvider theme={theme}>
+          <Layout>
+            <div>{children}</div>
+          </Layout>
+        </ChakraProvider>
+      </body>
     </html>
   );
 }
